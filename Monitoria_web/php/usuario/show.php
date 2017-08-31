@@ -1,5 +1,6 @@
 <?php 
-	session_start();
+		include '../conexao_session.php';
+
  ?>
  <!DOCTYPE html>
  <html>
@@ -8,6 +9,12 @@
  </head>
  <body>
  	<table>
+		 <tr>
+			 <td>Nome</td>
+			 <td>Password</td>
+			 <td>Button Editar</td>
+			 <td>Button Deletar</td>
+		 </tr>
  		<tr>
  			<?php 
  			foreach ($_SESSION['BD']['senha'] as $key => $value) {
@@ -19,7 +26,7 @@
  				<tr></tr>
  		<?php	}	?> 
  	</table>
- 	<a href="new.php">Cadastrar</a>
+ 	<a href="new.php" id="buttonsupre">Cadastrar</a>
  
  </body>
  </html>
