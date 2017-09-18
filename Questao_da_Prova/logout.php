@@ -2,7 +2,7 @@
 
 include 'functions.php';
 
-unset($_SESSION['login']);
+//unset($_SESSION['login']);
 
 header('location: index.php');
 
