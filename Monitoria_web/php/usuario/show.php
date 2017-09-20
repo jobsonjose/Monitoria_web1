@@ -1,9 +1,11 @@
 <?php
 		include '../conexao_session.php';
+            
             if (!isset($_SESSION['Login'])) {
                     header("location: new.php");
             }
             $login = $_SESSION['Login'];
+           
  ?>
  <!DOCTYPE html>
  <html>
@@ -21,7 +23,7 @@
                              <p>Aqui é o Sistem de Listagem de Usuarios cadastrado na nossa Solução</p>
                          </div>
                          <div class="card-body">
-                                        <table class="table ">
+                                        <table class="table">
                                                 <thead>
                                                         <tr>
                                     		 <td>Nome</td>
